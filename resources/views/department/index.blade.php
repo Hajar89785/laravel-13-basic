@@ -15,6 +15,8 @@
             <li class="list-group-item">
                 {{ $loop->iteration }}. {{ $department->name }}
 
+                <a class="btn btn-info btn-sm" href="{{ route('department.show', $department) }}" href="#"
+                    role="button">Detail</a>
                 <a class="btn btn-warning btn-sm" href="{{ route('department.edit', $department) }}" href="#"
                     role="button">edit</a>
                 <form action="{{ route('department.destroy', $department) }}" method="POST" class="d-inline">
